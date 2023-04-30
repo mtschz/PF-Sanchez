@@ -1,0 +1,286 @@
+header {
+  background-color: #a7e4ec;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.logo {
+  height: 40vh;
+}
+
+body {
+  margin: 0;
+  background-image: url("../img/patron-fondo.jpg");
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+p, h2, h3, h4, h5, h6, a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #443311;
+  margin: 0;
+}
+
+h1, .name {
+  font-family: "Caveat", cursive;
+  color: #443311;
+  margin: 0;
+  font-size: 3em;
+}
+
+.bg-primary {
+  background-color: #a7e4ec;
+}
+
+.bg-secondary {
+  background-color: #fccac7;
+}
+
+.title {
+  margin-block: 1em;
+  text-align: center;
+  padding-block: 1em;
+}
+
+img {
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  height: 10vh;
+  background-color: #fccac7;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  margin: 5rem;
+  text-decoration: none;
+  color: #443311;
+  font-size: large;
+  opacity: 0.8;
+}
+nav ul li .active {
+  opacity: 1;
+  font-weight: bolder;
+}
+@media (max-width: 768px) {
+  nav .nav-mobile {
+    display: flex;
+  }
+  nav .nav-mobile a {
+    margin: 1em;
+  }
+  nav .nav-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  nav .nav-desktop {
+    display: flex;
+  }
+  nav .nav-mobile {
+    display: none;
+  }
+}
+
+.conteiner-home {
+  height: 50vh;
+}
+
+.carousel {
+  width: 80%;
+  height: auto;
+}
+
+.img-home {
+  height: 40vh;
+  width: auto;
+}
+
+.conteiner-home {
+  height: auto;
+  display: flex;
+  height: auto;
+  padding: 0;
+  margin-block: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-home p {
+  font-size: x-large;
+  padding: 1em;
+}
+
+@media (max-width: 992px) {
+  .conteiner-home {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 100%;
+  }
+  p {
+    padding: 0.5em;
+  }
+  .d-none {
+    display: none;
+  }
+}
+.carousel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+  .d-none {
+    display: block;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+footer .name {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+footer h4 {
+  opacity: 0.9;
+}
+footer .footer-redes {
+  margin: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-redes img {
+  height: 2em;
+  width: auto;
+  margin-inline: 1em;
+}
+footer .footer-redes div {
+  margin-inline-end: 1em;
+  display: inline-flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  footer .footer-redes div {
+    margin: 0;
+  }
+}
+
+.gallery {
+  margin-block: 1em;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "art-1 art-3 art-3 art-4 art-4 art-2" "art-5 art-3 art-3 art-4 art-4 art-6";
+  row-gap: 0;
+  column-gap: 0;
+}
+.gallery article {
+  margin: 0%;
+  padding: 0%;
+}
+.gallery img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    margin-block: 1em;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "art-1" "art-3" "art-4" "art-2" "art-5" "art-6";
+    row-gap: 0;
+    column-gap: 0;
+  }
+  .gallery article {
+    margin: 0%;
+    padding: 0%;
+  }
+  .gallery img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+.art-1 {
+  grid-area: art-1;
+}
+
+.art-2 {
+  grid-area: art-2;
+}
+
+.art-3 {
+  grid-area: art-3;
+}
+
+.art-4 {
+  grid-area: art-4;
+}
+
+.art-5 {
+  grid-area: art-5;
+}
+
+.art-6 {
+  grid-area: art-6;
+}
+
+/*# sourceMappingURL=style.css.map */

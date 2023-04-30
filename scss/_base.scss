@@ -1,0 +1,35 @@
+body {
+    margin:0;
+    background-image: url('../img/patron-fondo.jpg');
+    background-size:cover;
+    height: 100%;
+    @include parallax;
+}
+p, h2, h3, h4, h5, h6, a {
+    font-family:$text;
+    color:$dark;
+    margin:0;
+}
+h1, .name {
+    font-family: $name-font;
+    color:$dark;
+    margin:0;
+    font-size: 3em;
+}
+.bg-primary {
+    background-color: $primary;
+}
+.bg-secondary {
+    background-color: $secondary;
+}
+.title {
+    margin-block: $m2;
+    text-align: center;
+    padding-block: $p2;
+}
+img {
+    margin:0;
+}
+.center {
+@include center;
+}

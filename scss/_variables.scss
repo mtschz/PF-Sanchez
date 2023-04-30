@@ -1,0 +1,31 @@
+/// COLORES
+$primary:       #a7e4ec;
+$secondary:     #fccac7;
+$white:    whitesmoke;
+$dark:          #443311;
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "white":      $white,
+  "dark":       $dark
+);
+/// FONT
+$name-font:'Caveat', cursive;
+$text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+///TAMAÑO
+$nav-height: 10vh;
+
+///BOX MODELING
+$m1: 0.5em;
+$m2: 1em;
+$m3: 2em;
+$p1: 0.5em;
+$p2: 1em;
+$p3: 2em;
+
+/// BREAKPOINTS
+$sm: 576px;
+$md:768px;
+$lg:992px;
+$xl:1200px;

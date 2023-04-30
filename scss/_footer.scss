@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:$m2;
+    .name {
+        margin-top: $m2;
+        margin-bottom: $m1;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    h4 {
+        opacity:0.9;
+    }
+    .footer-redes {
+        margin: $m2;
+        display: flex;
+        justify-content: space-around;
+        img {
+            height: 2em;
+            width:auto;
+            margin-inline: $p2;
+        }
+        div {
+            margin-inline-end: $p2;
+            display:inline-flex;
+            align-items: center;
+        }
+        @media (max-width:$md) {
+            div {
+                margin:0;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.conteiner-home {
+    height:auto;
+    display: flex;
+    height:auto;
+    padding: 0;
+    margin-block:$m1;
+    @include center;
+
+    p {
+        font-size:x-large; 
+        padding: $p2; 
+    }
+    
+}
+@media (max-width:$lg) {
+    .conteiner-home {
+        flex-direction: column;
+        flex-wrap: wrap;
+        }
+        img {
+            max-width: 100%;
+        }
+        p {
+            padding:$p1;
+        }
+        .d-none{
+            display:none;
+        }
+    }
+    .carousel {
+        width:100%;
+        height:auto;
+        @include center;
+        img {
+            max-width:100%;
+            height:auto;
+            object-fit: cover;
+        }
+
+}
+@media (min-width:$lg) {
+    .carousel {
+        width:100%;
+        height:auto;
+        @include center;
+        img {
+            width:80%;
+            height:auto;
+            object-fit: cover;
+        }
+
+    }
+    .d-none {
+        display:block;
+    }
+}
