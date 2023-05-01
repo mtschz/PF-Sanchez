@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" class="css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/9c/e9/ac/9ce9ac062929293249be9c342a2c5479.png">
+    <meta name="keywords" content="Uruguay, Costura, Confección, Contacto, Email, WhatsApp, Instagram, Redes sociales">
+    <meta name="description" content="¡Bienvenido al taller de costura My Dream! Ofrecemos confección y reparación de prendas de alta calidad, así como clases de costura para todos los niveles. Contáctanos para obtener más información.">
+    <title>Taller My Dream | Contacto</title>
+</head>
+<body>
+    <!--HEADER + LOGO-->
+    <header>
+        <div>
+            <img src="../img/logo.png" alt="logo" class="logo">
+        </div>
+    </header>
+    <!--NAVBAR-->
+    <nav>
+        <!--NAVBAR PARA MOBILE-->
+        <ul class="nav-mobile">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html"><img src="../img/home.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html"><img src="../img/contacto.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="servicios.html"><img src="../img/servicios.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="portfolio.html"><img src="../img/portfolio.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="capacitacion.html"><img src="../img/capacitacion.png" alt=""></a>
+            </li>
+        </ul>
+        <!--NAVBAR PARA DESKTOP-->
+        <ul class="nav-desktop">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="capacitacion.html">Capacitación</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="bg-primary title">
+            <h1>Contacto</h1>
+            <p>¿Tiene alguna pregunta? No dude en ponerse directamente en contacto con nosotros.</p>
+        </section>
+        <section class="contacto">
+            <!--REDES, UBICACION Y HORARIOS-->
+            <article class="art-1">
+                <h5>Redes sociales</h5>
+                <div class="ig">
+                    <img src="../img/instagam-logo.png" alt="Logo de Instagram">
+                    <p>mydreamebelin</p>
+                </div>
+                <div class="numero">
+                    <img src="../img/logo-whatsapp.png" alt="Logo de WhatsApp">
+                    <p>096 122 952</p>
+                </div>
+                <div class="horario">
+                    <h5>Horario de atención</h5>
+                    <p>De lunes a viernes: 10:00 a 18:00hs.</p>
+                    <p>Sábados: 10:00 a 14:00hs.</p>
+                </div>
+                <div class="ubicacion">
+                    <h5>Ubicación</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6624563685305!2d-56.1462143!3d-34.8898215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80e2e841bb41%3A0x8567d94ce5b7a6dd!2sJos%C3%A9%20Mazzini%203151%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1sfr!2suy!4v1678596935519!5m2!1sfr!2suy" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+            <article class="art-2">
+                <h5>Dejar una consulta</h5>
+                <form id="contact-form" name="contact-form">
+                    <div class="nombre-y-apellido">
+                        <div class="nombre">                        
+                            <label for="nombre" class="nombre">Nombre</label>                          
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="apellido">
+                           <label for="Apellido" class="">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="mail">
+                        <label for="email" class="">E-mail</label>
+                        <input type="email" id="email" name="email" class="shadow-sm form-control" placeholder="ejemplo@mail.com">
+                    </div>
+                    <div class="mensaje">
+                        <label for="message">Mensaje</label>
+                        <textarea type="text" id="message" name="message" rows="10" class="shadow-sm form-control md-textarea" placeholder="Escriba aquí su mensaje."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+        <!--FOOTER-->
+        <footer class="bg-primary">
+            <h2 class="name">My Dream</h2>
+            <h4>Taller de costura</h4>
+            <!--REDES SOCIALES-->
+            <div class="footer-redes">
+                <div>
+                    <a href="instagram.com"><img src="../img/instagam-logo.png" alt="Logo de Instagram"></a>
+                    <p class="d-none">mydreamebelin</p>
+                </div>
+                <div>
+                    <a href="whatsapp.com"><img src="../img/logo-whatsapp.png" alt="Logo de WhatsApp"></a>
+                    <p class="d-none">096 122 952</p>
+                </div>
+                <div>
+                    <a href="https://www.google.com/maps/place/Jos%C3%A9+Mazzini+3151,+11600+Montevideo,+Departamento+de+Montevideo/@-34.889821,-56.146214,15z/data=!4m6!3m5!1s0x959f80e2e841bb41:0x8567d94ce5b7a6dd!8m2!3d-34.8898215!4d-56.1462143!16s%2Fg%2F11sb64nnqy?hl=fr"><img src="../img/logo-ubicacion.png" alt="Logo de Google Maps"></a>
+                    <p class="d-none">Mazzini 3151</p>
+                </div>
+            </div>
+        </footer>

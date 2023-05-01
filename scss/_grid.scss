@@ -54,6 +54,56 @@
         }
     }
 }
+.servicios {
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "art-1 art-2 art-3"
+}
+@media (max-width:$lg) {
+    .servicios {
+        width:100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "art-1" 
+            "art-2" 
+            "art-3";
+        .card {
+            margin-block: $m1;
+            margin-inline: 0s;
+        }
+    }
+}
+.contacto{
+    padding-block: $p2;
+    margin-block: $m2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "art-1 art-2"
+    ;
+}
+@media (max-width:$lg) {
+    .contacto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "art-1"
+            "art-2"
+        ;
+    }
+}
+.title {
+    grid-area:title;
+}
 .art-1 {
     grid-area: art-1;
 }

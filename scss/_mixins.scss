@@ -8,3 +8,13 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+@mixin input {
+    padding:$p1;
+    transition: background-color 0.8s ease;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    &:focus {
+        background-color: rgb(243, 243, 243);
+    }
+}
