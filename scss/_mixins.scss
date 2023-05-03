@@ -3,11 +3,13 @@
     justify-content: center;
     align-items: center;
 }
+
 @mixin parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 @mixin input {
     padding:$p1;
     transition: background-color 0.8s ease;
@@ -16,5 +18,21 @@
     box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
     &:focus {
         background-color: rgb(243, 243, 243);
+    }
+}
+
+@mixin scale {
+    transition: transform $speed;
+    &:hover, &:focus {
+       transform: scale(1.1);
+    }
+   }
+
+@mixin link-hover {
+    font-weight: lighter;
+    &:hover, &:focus {
+        @include scale;
+        opacity: 1;
+        font-weight: bold;
     }
 }

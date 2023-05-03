@@ -6,4 +6,5 @@ header {
 }
 .logo {
     height:40vh;
+    @include scale;
 }

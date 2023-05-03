@@ -80,6 +80,30 @@
         }
     }
 }
+.cursos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "art-1 art-2"
+    ;
+}
+@media (max-width:$lg) {
+    .cursos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title"
+            "art-1"
+            "art-2"
+        ;
+    }
+}
+.calendar {
+    grid-area: calendar;
+}
 .contacto{
     padding-block: $p2;
     margin-block: $m2;

@@ -7,6 +7,10 @@ header {
 
 .logo {
   height: 40vh;
+  transition: transform 1s;
+}
+.logo:hover, .logo:focus {
+  transform: scale(1.1);
 }
 
 body {
@@ -166,6 +170,29 @@ img {
   flex-direction: column;
 }
 
+.cursos .art-1, .cursos .art-2 {
+  margin: 2em;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+.cursos .art-1 img, .cursos .art-2 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.cursos .art-1 h4, .cursos .art-2 h4 {
+  font-size: x-large;
+  margin-bottom: 0.5em;
+}
+.cursos .art-1 h4, .cursos .art-1 p, .cursos .art-2 h4, .cursos .art-2 p {
+  margin-inline: 0.5em;
+}
+.cursos .art-1 button, .cursos .art-2 button {
+  width: 30%;
+  margin-bottom: 1em;
+}
+
 nav {
   height: 10vh;
   background-color: #fccac7;
@@ -180,7 +207,16 @@ nav ul {
   padding: 0;
 }
 nav ul li {
+  font-weight: lighter;
   display: inline;
+}
+nav ul li:hover, nav ul li:focus {
+  transition: transform 1s;
+  opacity: 1;
+  font-weight: bold;
+}
+nav ul li:hover:hover, nav ul li:hover:focus, nav ul li:focus:hover, nav ul li:focus:focus {
+  transform: scale(1.1);
 }
 nav ul li a {
   margin: 5rem;
@@ -191,9 +227,19 @@ nav ul li a {
 }
 nav ul li .active {
   opacity: 1;
-  font-weight: bolder;
+  font-weight: 900;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  nav ul li .active {
+    transition: transform 1s;
+    background-color: #f7b0ad;
+    border-radius: 50%;
+  }
+  nav ul li .active:hover, nav ul li .active:focus {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 992px) {
   nav .nav-mobile {
     display: flex;
   }
@@ -204,7 +250,7 @@ nav ul li .active {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav .nav-desktop {
     display: flex;
   }
@@ -317,6 +363,12 @@ footer .footer-redes img {
   width: auto;
   margin-inline: 1em;
 }
+footer .footer-redes img:hover, footer .footer-redes img:focus {
+  transition: transform 1s;
+}
+footer .footer-redes img:hover:hover, footer .footer-redes img:hover:focus, footer .footer-redes img:focus:hover, footer .footer-redes img:focus:focus {
+  transform: scale(1.1);
+}
 footer .footer-redes div {
   margin-inline-end: 1em;
   display: inline-flex;
@@ -411,6 +463,25 @@ button:hover {
     margin-inline: 0s;
   }
 }
+.cursos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "title title" "art-1 art-2";
+}
+
+@media (max-width: 992px) {
+  .cursos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "title" "art-1" "art-2";
+  }
+}
+.calendar {
+  grid-area: calendar;
+}
+
 .contacto {
   padding-block: 1em;
   margin-block: 1em;

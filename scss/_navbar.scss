@@ -10,6 +10,7 @@ nav {
         margin: 0;
         padding: 0;
         li {
+            @include link-hover;
             display: inline;
             a {
                 margin: 5rem;
@@ -20,11 +21,16 @@ nav {
             }
             .active {
                 opacity: 1;
-                font-weight: bolder;
+                font-weight:900;
+                @media (max-width: $lg) {
+                    @include scale;
+                    background-color: #f7b0ad;
+                    border-radius: 50%;
+                }
             }
         }
     }
-    @media (max-width:$md) {
+    @media (max-width:$lg) {
         .nav-mobile {
             display:flex;
             a {
@@ -35,7 +41,7 @@ nav {
             display: none;
         }
     }
-    @media (min-width:$md) {
+    @media (min-width:$lg) {
         .nav-desktop {
             display: flex;
         }

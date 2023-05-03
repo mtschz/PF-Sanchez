@@ -21,6 +21,9 @@ footer {
             height: 2em;
             width:auto;
             margin-inline: $p2;
+            &:hover,&:focus {
+                @include scale;
+            }
         }
         div {
             margin-inline-end: $p2;

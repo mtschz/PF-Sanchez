@@ -129,3 +129,27 @@ img {
         flex-direction: column;
     }
 }
+.cursos {
+    .art-1, .art-2 {
+        margin:$m3;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        img {
+            display: block;
+            max-width: 100%;
+            height:auto;
+        }
+        h4 {
+            font-size: x-large;
+            margin-bottom: $m1;
+        }
+        h4, p {
+            margin-inline:$m1;
+        }
+        button {
+            width:30%;
+            margin-bottom:$m2;
+        }
+}
+}
