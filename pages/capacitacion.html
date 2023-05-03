@@ -15,6 +15,8 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <meta name="keywords" content="Uruguay, Costura, Confección, Cursos, Talleres, Clases, Formación">
     <meta name="description" content="Ofrecemos cursos en línea y talleres en persona para mejorar tus habilidades en la confección de prendas. Descubre cómo llevar tus habilidades de costura al siguiente nivel. ¡Únete a nosotros ahora!">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Taller My Dream | Contacto</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
         <!--NAVBAR PARA MOBILE-->
         <ul class="nav-mobile">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html"><img src="../img/home.png" alt="Home"></a>
+                <a class="nav-link active" href="../index.html"><img src="../img/home.png" alt="Home"></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../pages/contacto.html"><img src="../img/contacto.png" alt="Contacto"></a>
@@ -69,14 +71,14 @@
                 <h1>Cursos y talleres</h1>
                 <p>Ofrecemos una variedad de cursos y talleres de costura para todos los niveles, desde principiantes hasta avanzados.</p>
             </article>
-            <article class="art-1">
-                    <img src="../img/nino-cosiendo Cropped (1).jpg" alt="Niño cosiendo en una máquina de coser">
+            <article class="art-1" data-aos="fade-down">
+                    <img src="../img/nino-cosiendo.jpg" alt="Niño cosiendo en una máquina de coser">
                     <h4>Curso de costura para niños</h4>
                     <p>Ofrecemos un curso diseñado especialmente para niños entre 8 y 12 años de edad que deseen aprender habilidades básicas de costura. Los niños tendrán la oportunidad de elegir sus propios proyectos y telas, lo que les permitirá crear algo único y personalizado. Algunos proyectos que hemos hecho en el pasado incluyen almohadas, bolsas de mano, banderines y muñecos de tela.</p>
                     <button>Inscribirse</button>
             </article>
             <hr>
-            <article class="art-2">
+            <article class="art-2" data-aos="fade-down">
                 <div class="curso-adultos">
                     <img src="../img/adultos-cosiendo.jpg" alt="Mujer cosiendo en una máquina de coser">
                     <h4>Curso de costura para adultos</h4>
@@ -106,5 +108,8 @@
                     </div>
                 </div>
             </footer>
+            <script>
+                AOS.init();
+            </script>
     </body>
     </html>

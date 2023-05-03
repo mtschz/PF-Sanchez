@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" class="css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <meta name="keywords" content="Uruguay, Taller, Costura, Confección, Prendas, Reparación, Clases, Sastrería.">
     <meta name="description" content="¡Bienvenido al taller de costura My Dream! Ofrecemos confección y reparación de prendas de alta calidad, así como clases de costura para todos los niveles. Contáctanos para obtener más información.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Taller My Dream | Home</title>
 </head>
 <body>
@@ -72,11 +74,11 @@
         <div class="carousel">
             <img src="img/carousel/maquina-de-coser.jpg" alt="Máquina de coser blanca">
         </div>
-        <section class="conteiner-home bg-primary">
+        <section class="conteiner-home bg-primary" data-aos="fade-up">
                 <img src="img/maquina-de-coser.jpg" alt="Máquina de coser" class="img-home">
                 <p>Si tienes prendas que  necesitan reparaciones, ajustes o modificaciones, estás en el lugar indicado. Tenemos años de experiencia y capacitacion en técnicas de costura, patrones y alteraciones para que puedas lucir tus prendas como si fueran nuevas. </p>
         </section>
-        <section class="conteiner-home bg-secondary">
+        <section class="conteiner-home bg-secondary"  data-aos="fade-up">
                 <p>Si tienes alguna pregunta sobre nuestros servicios o estás interesado en programar una consulta, no dudes en ponerte en contacto con nosotros. Estamos ansiosos por trabajar contigo y ayudarte a hacer que tus prendas favoritas sean parte de tu armario por muchos años más.</p>
                 <img src="img/coleccion-de-hilos.jpg" alt="Hilos de diferentes colores" class="img-home">
         </section>
@@ -101,5 +103,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
